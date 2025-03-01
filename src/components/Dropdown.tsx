@@ -14,27 +14,28 @@ const Dropdown = ({ content }: DropdownProps) => {
   console.log(content.length);
   return (
     <div
-      className={`bg-white px-8 w-max mx-auto grid ${
+      className={`bg-black px-8 w-max mx-auto grid ${
         content.length == 3 ? "grid-cols-3" : "grid-cols-2"
       } gap-8`}
     >
       {content.map((navContent, index) => (
         <div key={index} className="space-y-6 w-full">
-          <h2 className="text-xl font-medium">{navContent.title}</h2>
+          <div className=""/>
+          <p className="text-sm text-neutral-500">{navContent.title}</p>
           <div className="space-y-4">
             {navContent.subNav.map(
               (item, idx) =>
                 item.heading && (
                   <div key={idx}>
                     <div className="flex items-start space-x-3 group cursor-pointer">
-                      <div className="flex-shrink-0 p-2 bg-gray-900 rounded-md">
+                      <div className="flex-shrink-0 p-2 bg-black rounded-md border-neutral-500 border">
                         <item.icon className="w-5 h-5" />
                       </div>
                       <div>
-                        <h3 className="font-medium group-hover:text-blue-400 transition-colors">
+                        <h3 className="font-medium text-sm group-hover:text-neutral-100 transition-colors">
                           {item.heading}
                         </h3>
-                        <p className="text-sm text-gray-400">{item.subHeading}</p>
+                        <p className="text-xs text-neutral-500">{item.subHeading}</p>
                       </div>
                     </div>
                   </div>
@@ -43,6 +44,7 @@ const Dropdown = ({ content }: DropdownProps) => {
           </div>
         </div>
       ))}
+      <div className="" />
     </div>
 
     // <div>

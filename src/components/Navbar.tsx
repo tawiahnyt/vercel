@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 mb-32 ${
         isScrolled ? "bg-black/80 backdrop-blur-md" : "bg-transparent"
       }`}
     >
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
                     >
                       <a
                         href="#_"
-                        className="gap-5 mx-1 px-2 py-1 rounded-md text-sm font-medium flex items-center justify-center leading-6 text-gray-600 whitespace-no-wrap hover:rounded-full hover:bg-gray-100 focus:outline-none focus:shadow-none"
+                        className="gap-5 mx-1 px-2 py-1 rounded-md text-sm font-medium flex items-center justify-center leading-6 text-neutral-500 whitespace-no-wrap hover:rounded-full hover:bg-neutral-500 hover:text-white focus:outline-none focus:shadow-none"
                       >
                         {item.navTitle || item}{" "}
                         {item.navTitle ? (
@@ -77,13 +77,13 @@ const Navbar: React.FC = () => {
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
               <a
-                href="#"
+                href="#_"
                 className="text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Log in
               </a>
               <a
-                href="#"
+                href="#_"
                 className="button-primary ml-4 px-4 py-2 rounded-md text-sm font-medium"
               >
                 Sign Up

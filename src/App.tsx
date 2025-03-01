@@ -12,6 +12,11 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Navbar />
+      {/* <br />
+      <br />
+      <br />
+      <br />
+      <br /> */}
       <Hero />
       <Features />
       <Workflow />
