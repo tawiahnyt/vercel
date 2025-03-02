@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Hero: React.FC = () => {
   return (
     <div className="flex items-center justify-center gradient-bg overflow-hidden max-w-7xl mx-auto mt-40">
-      <div className="max-w-7xl mx-auto mt-40 absolute inset-0 h-full w-full bg-black bg-[linear-gradient(to_right,#262626_0.1px,transparent_1px),linear-gradient(to_bottom,#262626_0.1px,transparent_1px)] bg-[size:80px_80px]"></div>
+      <div className="max-w-7xl mx-auto mt-40 absolute inset-0 h-full w-full bg-black bg-[linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)] bg-[size:80px_80px]"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center  z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
