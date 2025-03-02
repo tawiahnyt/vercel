@@ -19,8 +19,8 @@ function App() {
       <br /> */}
       <Hero />
       {/* <Features /> */}
-      <Workflow />
-      <Frameworks />
+      {/* <Workflow /> */}
+      {/* <Frameworks /> */}
       <Customers />
       <CTA />
       <Footer />
