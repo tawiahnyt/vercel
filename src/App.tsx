@@ -18,7 +18,7 @@ function App() {
       <br />
       <br /> */}
       <Hero />
-      <Features />
+      {/* <Features /> */}
       <Workflow />
       <Frameworks />
       <Customers />
